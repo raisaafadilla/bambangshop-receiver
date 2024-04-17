@@ -68,15 +68,15 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement list_all_as_string function in Notification repository.`
     -   [x] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 3: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Commit: `Implement receive_notification function in Notification service.`
-    -   [ ] Commit: `Implement receive function in Notification controller.`
-    -   [ ] Commit: `Implement list_messages function in Notification service.`
-    -   [ ] Commit: `Implement list function in Notification controller.`
+    -   [x] Commit: `Create Notification service struct skeleton.`
+    -   [x] Commit: `Implement subscribe function in Notification service.`
+    -   [x] Commit: `Implement subscribe function in Notification controller.`
+    -   [x] Commit: `Implement unsubscribe function in Notification service.`
+    -   [x] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [x] Commit: `Implement receive_notification function in Notification service.`
+    -   [x] Commit: `Implement receive function in Notification controller.`
+    -   [x] Commit: `Implement list_messages function in Notification service.`
+    -   [x] Commit: `Implement list function in Notification controller.`
     -   [ ] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
 
 ## Your Reflections
@@ -90,4 +90,8 @@ This is the place for you to write reflections:
 2. In Rust, ensuring thread safety is a priority, and allowing mutable static variables could potentially result in data races, which are troublesome. Mutable statics conflict with Rust's strict control over resources because they are accessible across the entire program and can be changed from any part of it. Moreover, static variables are designed to be initialized once in a predictable way, which is particularly crucial in concurrent settings.
 
 #### Reflection Subscriber-2
+1. I explored things outside of the steps in the tutorial. In lib.rs, I found dependencies and initial setups, including the initialization of APP_CONFIG and REQUEST_CLIENT used throughout the code. This file defines essential components for the application. On the other hand, Cargo.toml is the main configuration file for the Rust project, managing dependencies, project setup, and metadata. Both files are crucial for setting up and maintaining the Rust project, ensuring consistency and manageability throughout development.
 
+2. The Observer pattern simplifies adding new subscribers to the notification system, enhancing code flexibility and scalability. By separating publishers from observers, it allows for straightforward integration of multiple instances of the main application. Moreover, parallel notification processing enhances code efficiency.
+
+3. I have tried to make my tests and enhancing the documentation on my Postman collection. While I'm still unsure if everything is correct, I'm confident that this feature greatly benefits my workflow.
